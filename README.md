@@ -22,7 +22,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To use, simply require the local ruby files that you need, then call `monitor_libraries` with an array of files that you would like monitored.
+```ruby
+require_relative 'sample'
+require_relative 'sample2'
+
+monitor_libraries(['sample', 'sample2'])
+
+# anything else
+```
+When any of the monitored files changes, the code will be reloaded automatically for you
 
 ## Development
 
